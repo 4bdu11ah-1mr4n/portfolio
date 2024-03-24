@@ -12284,6 +12284,8 @@ pre .code {
 .uia-timeline__group {
   position: relative;
   padding-left: 2rem; /* Indent content to the right of the line */
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .uia-timeline__point {
