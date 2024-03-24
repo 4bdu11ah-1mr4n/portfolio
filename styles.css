@@ -12258,71 +12258,73 @@ pre .code {
 }
 
 
-
+/* Styles for education section */
 .education {
   padding-top: 20px;
-  width: min(500px, 95vw);
+  max-width: 800px; /* Adjust max-width as needed */
   margin: 0 auto; /* Center horizontally */
   text-align: left; /* Align text to the left within the centered container */
 }
+
 .education__heading {
-  padding-inline-start: 100px;
   padding-bottom: 20px;
+  text-align: center; /* Center the heading */
 }
+
 .education__heading h4 {
   font-size: 2rem;
   margin-block: 0.5rem;
 }
+
 .education__content {
   position: relative;
-  padding: 1rem 1rem 1rem 4rem;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
+  padding: 1rem;
+  margin-bottom: 20px; /* Add some bottom margin between each content */
+  background-color: #f8f8f8; /* Light background color */
+  border-radius: 5px;
 }
-.education__content h5 {
-  color: rgba(0, 0, 0, 0.9);
-  font-size: 2rem;
-  margin-block: 0;
-  padding-left: 3rem;
-  padding-top: 10px;
-}
-.education__content p {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 1rem;
-  margin-block-start: 0.5rem;
+
+.education__content h5,
+.education__content p,
+.education__content .year {
+  margin-block-start: 0;
   margin-block-end: 0;
-  padding-left: 3rem;
 }
+
 .education__content .year {
   position: absolute;
-  content: var(--year);
+  top: 10px;
+  right: 10px;
   width: 4rem;
-  aspect-ratio: 1;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   color: white;
   border-radius: 50%;
-  background-color: var(--indigo);
- 
-  
-  left: 1rem;
-  top: 0.74rem;
+  background-color: var(--indigo); /* Adjust color as needed */
 }
-.education__content:hover {
-  background-color: rgba(230, 230, 230, 0.48);
-  border-radius: 0.25rem;
-}
-.education__content:not(:last-child):before {
-  position: center;
-  content: "";
-  width: 4px;
-  background-color: #333;
-  left: calc(2rem - 2px);
-  top: 2.74rem;
-  bottom: -0.74rem;
-  z-index: 1;
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .education {
+    padding: 0 20px; /* Add horizontal padding */
+  }
+
+  .education__content {
+    padding: 1rem;
+  }
+
+  .education__content h5,
+  .education__content p {
+    padding-left: 0; /* Remove left padding on text */
+  }
+
+  .education__content .year {
+    position: relative; /* Remove absolute positioning on smaller screens */
+    margin-top: 10px; /* Add top margin instead of absolute positioning */
+  }
 }
 
 h2
