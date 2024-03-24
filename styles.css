@@ -12259,16 +12259,12 @@ pre .code {
 
 
 
-
-
 /* Timeline styles */
 .uia-timeline__container {
-  padding-top: 2rem; /* Add space above timeline */
-  justify-content: center; /* Center horizontally */
-  align-items: center; 
+  padding: 2rem 1rem; /* Add space around the timeline */
   display: flex;
-  align-items: flex-start; /* Align timeline to the top */
-  padding-bottom: 5rem; /* Add space below timeline */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
 }
 
 .uia-timeline__line {
@@ -12320,7 +12316,6 @@ pre .code {
 .uia-timeline__point p {
   color: #666;
 }
-
 
 h2
 {
