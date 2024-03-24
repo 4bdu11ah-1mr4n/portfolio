@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Syeda rubab Ali">
+    <title>Portfolio | Syeda Rubab Ali</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Genos:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Genos:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#!">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#top">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#service">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#testmonial">Testmonial</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav d-flex flex-row">
+                  <li class="nav-item me-3 me-lg-0">
+                      <a class="nav-link" href="#!">
+                          <i class="fas fa-shopping-cart"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item me-3 me-lg-0">
+                      <a class="nav-link" href="#!">
+                          <i class="fab fa-twitter"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item me-3 me-lg-0">
+                      <a class="nav-link" href="#!">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!-- Navbar -->
+
+
+<!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Syeda Rubab Ali</span>
+            </h1>
+            <h1><span id="intro-text">I'm a</span> <span id="changing-text" class="black-text"></span></h1>
+            
+           
+
+
+<!-- JavaScript -->
+<script>
+    var text = ['Web Developer', 'App Developer', 'UI/UX Designer'];
+    var counter = 0;
+    var elem = document.getElementById("changing-text");
+    setInterval(change, 1200);
+    function change() {
+        elem.innerHTML = text[counter];
+        counter++;
+        if (counter >= text.length) {
+            counter = 0;
+        }
+    }
+</script>
+
+            <button class="btn btn-primary" id="scrollToAbout">About me</button>
+        </div>
+    </header><!-- end of page header -->
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Smooth scroll to the target section
+            document.getElementById('scrollToAbout').addEventListener('click', function() {
+                document.querySelector('#about').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        </script>   
+
+
+
+
+
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    
+                    <img src="painting.png" class="about-img"  
+                        alt="painting.jpg">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        I'm Syeda Rubab Ali, a passionate and experienced professional in the field of technology. 
+                        With expertise in web development, app development, and UI/UX design, I love creating innovative 
+                        and user-friendly digital experiences. My goal is to combine technical skills with creative vision 
+                        to deliver outstanding solutions that exceed client expectations. I stay up-to-date with the latest
+                        industry trends and technologies to ensure every project I work on is executed with precision
+                        and excellence, making a lasting impact in the digital world.
+                    </p>
+                    <a href="C:\Users\itsab\OneDrive\Documents\rutest\meyawo-1.0.0\meyawo-1.0.0\cv.pdf" target="_blank" class="btn-rounded btn btn-outline-primary mt-4">Download CV</a>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Service</h6>
+          
+            <!-- row -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="imgs/pencil-case.svg"
+                                alt="123"
+                                class="icon">
+                            <h6 class="title">UI/UX Design</h6>
+                            <p class="subtitle">
+                                I specialize in making interfaces easy and nice for users. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="imgs/responsive.svg"
+                                alt="123"
+                                class="icon">
+                            <h6 class="title">Website Dev</h6>
+                            <p class="subtitle">I specialize in creating websites that are both functional and user-friendly.</p>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="imgs/analytics.svg"
+                                alt="123"
+                                class="icon">
+                            <h6 class="title">App dev</h6>
+                            <p class="subtitle">
+                                I specialize in developing user-friendly and efficient mobile applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Portfolio</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img src="imgs/folio-1.png" class="portfolio-card-img"
+                            alt="123">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Website development</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="imgs/folio-2.png" class="img-responsive rounded"
+                            alt="123">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Website Development</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="imgs/folio-3.jpg" class="img-responsive rounded"
+                            alt="123">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>UI/UX Designing</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+    
+    <!-- education section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="page" data-uia-timeline-skin="4">
+          <div class="uia-timeline">
+            <div class="uia-timeline__container">
+              <div class="uia-timeline__line"></div>
+              <div class="uia-timeline__annual-sections">
+                <span class="uia-timeline__year" aria-hidden="true">2017-2018</span>
+                <div class="uia-timeline__groups">
+                  <section class="uia-timeline__group">
+                    <div class="uia-timeline__point uia-card">
+                      <div class="uia-card__container">
+                        <div class="uia-card__intro">
+                          <h3 class="ra-heading">Matriculation</h3>
+                          <span class="uia-card__time">2017-2018</span>
+                        </div>
+                        <div class="uia-card__body">
+                          <div class="uia-card__description">
+                            <p>Details about your matriculation</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="uia-timeline__annual-sections">
+                <span class="uia-timeline__year" aria-hidden="true">2018-2020</span>
+                <div class="uia-timeline__groups">
+                  <section class="uia-timeline__group">
+                    <div class="uia-timeline__point uia-card">
+                      <div class="uia-card__container">
+                        <div class="uia-card__intro">
+                          <h3 class="ra-heading">Intermediate</h3>
+                          <span class="uia-card__time">2018-2020</span>
+                        </div>
+                        <div class="uia-card__body">
+                          <div class="uia-card__description">
+                            <p>Details about your intermediate education</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="uia-timeline__annual-sections">
+                <span class="uia-timeline__year" aria-hidden="true">2021-ongoing</span>
+                <div class="uia-timeline__groups">
+                  <section class="uia-timeline__group">
+                    <div class="uia-timeline__point uia-card">
+                      <div class="uia-card__container">
+                        <div class="uia-card__intro">
+                          <h3 class="ra-heading">Bachelors (Ongoing)</h3>
+                          <span class="uia-card__time">2021-ongoing</span>
+                        </div>
+                        <div class="uia-card__body">
+                          <div class="uia-card__description">
+                            <p>Details about your ongoing bachelor's degree</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </section><!-- end of education section -->
+   
+    
+
+    <!-- testimonial section -->
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+            <p class="section-subtitle">What Think Client About Me ?</p>
+            <h6 class="section-title mb-6">Testmonial</h6>
+
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="imgs/avatar2.png" class="testimonial-card-img"
+                                alt="123">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">We worked with Rubab on our app. She did good job and understood what we wanted. We are happy with her work and would work with her again.</p>
+                            <h6 class="testimonial-card-title">Ahmed Ali</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="imgs/avatar1.png" class="testimonial-card-img"
+                                alt="123">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Rubab did very good work on our website. She made it look nice and work well. We are happy with her work and recommend her.</p>
+                            <h6 class="testimonial-card-title">Aisha Khan</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of testimonial section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <div class="copyright">
+                All rights reserved 🐼  2024 Syeda Rubab Ali
+            </div>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="https://www.instagram.com/syeda_.rubab" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="jquery/jquery-3.4.1.js"></script>
+    
+
+    <!-- bootstrap 3 affix -->
+    <script src="bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="js/meyawo.js"></script>
+
+</body>
+
+</html>
